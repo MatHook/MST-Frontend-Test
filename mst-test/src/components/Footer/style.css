@@ -1,0 +1,26 @@
+.Footer {
+  position: absolute;
+  width: 205px;
+  height: 15px;
+  left: 60px;
+  bottom: 22px;
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: 0.175729px;
+  text-transform: uppercase;
+
+  /* TextDisable */
+  color: #505050;
+}
+
+.FooterBackground {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 0px;
+}
