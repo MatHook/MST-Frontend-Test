@@ -1,0 +1,67 @@
+.Content {
+  position: absolute;
+  width: 435px;
+  height: 184px;
+  left: 172px;
+  top: 326px;
+}
+
+.ContentBackground {
+  position: absolute;
+  width: 759px;
+  height: 840px;
+  left: 343px;
+  top: 60px;
+
+  /* Background Alternative */
+
+  background: #F0F0F0;
+}
+
+.ContentTitle {
+  width: 435px;
+  height: 53px;
+  margin-block-start: unset;
+
+  /* Desctop/Title */
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  letter-spacing: -0.0255199px;
+  text-transform: uppercase;
+
+  /* Base */
+
+  color: #262525;
+}
+
+.ContentText {
+  width: 435px;
+  height: 90px;
+
+  /* Desctop/Text */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  letter-spacing: -0.0220791px;
+
+  /* Base */
+
+  color: #262525;
+}
+
+.LinkDetail {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 406px;
+  top: 482px;
+}

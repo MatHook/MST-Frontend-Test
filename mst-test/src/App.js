@@ -4,6 +4,8 @@ import './App.css';
 
 import Footer from './components/Footer'
 import Header from './components/Header'
+import SectionMenu from './components/SectionMenu';
+import { ContentList } from './content/ContentList';
 
 const bodyStyle = {
   display: 'flex',
@@ -17,6 +19,10 @@ function App() {
     <Router>
       <div style={bodyStyle}>
         <Header />
+        <SectionMenu />
+        <React.Fragment>
+          <ContentList />
+        </React.Fragment>
         <Footer />
       </div>
     </Router>

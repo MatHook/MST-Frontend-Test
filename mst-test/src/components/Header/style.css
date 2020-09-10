@@ -49,7 +49,6 @@
 }
 
 .LogoBox {
-  position: absolute;
   width: 232px;
   height: 72.32px;
   left: 24px;
@@ -65,7 +64,6 @@
 }
 
 .BurgerBackground {
-  position: absolute;
   width: 70px;
   height: 70px;
   top: 25px;
@@ -93,6 +91,7 @@
   height: 21px;
   right: 122px;
   top: 22.81px;
+  margin: unset;
 
   /* Desctop/Special */
 
@@ -109,4 +108,141 @@
   /* Base */
 
   color: #262525;
+}
+
+.HeaderMenu {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  width: 558px;
+  height: 15px;
+  top: 22px;
+  left: calc(50% - 558px/2 - 0.5px);
+}
+
+.HeaderMenu>.MenuItem1 {
+  position: static;
+  width: calc(50% - 56px);
+  height: 15px;
+  left: 0px;
+  top: 0px;
+  /* Desctop/HeaderMenu */
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  /* Base */
+
+  color: #262525;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: center;
+  margin: 56px 0px;
+}
+
+.HeaderMenu>.MenuItem2 {
+  position: static;
+  width: calc(50% - 56px);
+  height: 15px;
+  left: 147px;
+  top: 0px;
+
+
+  /* Desctop/HeaderMenu */
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  /* Base */
+
+  color: #262525;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: center;
+  margin: 56px 0px;
+}
+
+.HeaderMenu>.MenuItem3 {
+  position: static;
+  width: calc(50% - 56px);
+  height: 15px;
+  left: 301px;
+  top: 0px;
+
+  /* Desctop/HeaderMenu */
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  /* Base */
+
+  color: #262525;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 2;
+  align-self: center;
+  margin: 56px 0px;
+}
+
+.HeaderMenu>.MenuItem4 {
+  position: static;
+  width: calc(50% - 56px);
+  height: 15px;
+  left: 433px;
+  top: 0px;
+
+  /* Desctop/HeaderMenu */
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  /* Base */
+
+  color: #262525;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 3;
+  align-self: center;
+  margin: 56px 0px;
 }
