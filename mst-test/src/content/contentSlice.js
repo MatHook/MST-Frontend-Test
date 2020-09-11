@@ -5,31 +5,31 @@ const contentSlice = createSlice({
   initialState: [
     {
       id: 0,
-      visible: true,
+      visible: false,
       title: "Архитектура",
-      image: './el-significado-del-color.png',
+      image: "./el-significado-del-color.png",
       content:
         "Оригинальная архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни",
     },
     {
       id: 1,
       visible: false,
-      image: './el-significado-del-color.png',
+      image: "./el-significado-del-color.png",
       title: "Благоустройство",
       content:
         "Запроектированные большие окна, которые пропускают много солнечного света, наполнят Ваши квартиры теплотой и уютом",
     },
     {
       id: 2,
-      visible: false,
-      image: './el-significado-del-color.png',
+      visible: true,
+      image: "../../public/IllustrationMask - Безопасность.jpg",
       title: "Безопастность",
       content:
         "Современный двор европейского уровня — территория для детей, игр на свежем воздухе и вечерних",
     },
     {
       id: 3,
-      image: './el-significado-del-color.png',
+      image: "./el-significado-del-color.png",
       visible: false,
       title: "Инженерия",
       content:
@@ -37,7 +37,7 @@ const contentSlice = createSlice({
     },
     {
       id: 4,
-      image: './el-significado-del-color.png',
+      image: "./el-significado-del-color.png",
       visible: false,
       title: "Инфраструктура",
       content:
@@ -45,7 +45,7 @@ const contentSlice = createSlice({
     },
     {
       id: 5,
-      image: './el-significado-del-color.png',
+      image: "./el-significado-del-color.png",
       visible: false,
       title: "Транспортная доступность",
       content:
