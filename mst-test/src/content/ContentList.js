@@ -7,6 +7,7 @@ const cx = className.bind(style);
 
 export const ContentList = () => {
   const content = useSelector((state) => state.content);
+  const baseUrl = "../../public/"
 
   const renderedContent = content.map((cnt, i) => {
     let content
@@ -33,7 +34,7 @@ export const ContentList = () => {
               />
             </svg>
           </div>
-          <img src={cnt.image} alt="Content" />
+          <img src={require(`${cnt.image}`)} alt="Content" />
         </div>
       );
     }
