@@ -10,6 +10,14 @@
   top: 355px;
 }
 
+.active {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: #262525;
+}
+
 .SectionMenu>.SectionMenuItem1 {
   position: static;
   width: 103px;
@@ -28,15 +36,13 @@
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 15px;
   display: inline-block;
   align-items: center;
   letter-spacing: 0.567739px;
-  text-transform: uppercase;
 
-  color: #262525;
+  color: #505050;
 
 
   /* Inside Auto Layout */
@@ -47,12 +53,16 @@
   margin: 0px 32px 32px;
 }
 
+
+
 .SectionMenu>.SectionMenuItem2 {
   /* SectionMenu - Благоустройство */
   position: static;
   width: 112px;
   left: 0px;
   top: 48px;
+
+  z-index: 5;
 
   background: none;
   border: none;
@@ -64,7 +74,7 @@
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
+
   font-size: 13px;
   line-height: 15px;
   display: inline-block;
@@ -89,6 +99,8 @@
   width: 98px;
   left: 0px;
   top: 95px;
+  
+  z-index: 5;
 
   background: none;
   border: none;
@@ -100,7 +112,7 @@
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
+
   font-size: 13px;
   line-height: 15px;
   display: inline-block;
@@ -127,6 +139,8 @@
   left: 0px;
   top: 142px;
 
+  z-index: 5;
+
   background: none;
   border: none;
   margin: 0;
@@ -136,7 +150,7 @@
   /* Desctop/SectionMenu */
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
+
   font-size: 13px;
   line-height: 15px;
   display: inline-block;
@@ -162,6 +176,8 @@
   left: 0px;
   top: 189px;
 
+  z-index: 5;
+
   background: none;
   border: none;
   margin: 0;
@@ -171,7 +187,7 @@
   /* Desctop/SectionMenu */
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
+
   font-size: 13px;
   line-height: 15px;
   display: inline-block;
@@ -193,9 +209,11 @@
   /* SectionMenu - Транспортная доступность */
 
   position: static;
-  
+
   left: 0px;
   top: 236px;
+
+  z-index: 5;
 
   background: none;
   border: none;
@@ -206,7 +224,7 @@
   /* Desctop/SectionMenu */
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
+
   font-size: 13px;
   line-height: 15px;
   display: inline-block;
@@ -225,8 +243,6 @@
 }
 
 .SectionMenuActive {
-  /* SectionMenuActive */
-
 
   /* Auto Layout */
 
@@ -240,110 +256,142 @@
 
 }
 
-.SectionMenuActiveItem1 {
-  /* SectionMenuActive - Архитектура */
-  
-  z-index: 1;
+.SectionMenuItem1:hover .SectionMenuActiveItem1 {
+  display: block;
+}
 
-  position: static;
+.SectionMenuActiveItem1 {
+  transform: translate(0, -75%);
+  /* bottom: calc(50%); */
+  display: none;
+  position: absolute;
   width: 111px;
   height: 9px;
-
-  /* BackgroundAccent */
+  left: calc(50% - 111px/2);
+  /* top: calc(100%); */
   background: #EBD8CC;
-
-  /* Inside Auto Layout */
   flex: none;
   order: 0;
   align-self: flex-start;
+  margin: 0px 0px;
+
+  z-index: -1;
+}
+
+.SectionMenuItem2:hover .SectionMenuActiveItem2 {
+  display: block;
 }
 
 .SectionMenuActiveItem2 {
   /*SectionMenuActive-Благоустройство*/
-
-
-  z-index: 1;
-
-  position: static;
+  transform: translate(0, -75%);
+  /* bottom: calc(50%); */
+  display: none;
+  position: absolute;
   width: 113px;
   height: 9px;
-
+  left: calc(50% - 111px/2);
+  /* top: calc(100%); */
   background: #EBD8CC;
-
-  /*InsideAutoLayout*/
-
   flex: none;
-  order: 1;
+  order: 0;
   align-self: flex-start;
+  margin: 0px 0px;
+
+  z-index: -1;
+}
+
+.SectionMenuItem3:hover .SectionMenuActiveItem3 {
+  display: block;
 }
 
 .SectionMenuActiveItem3 {
   /* SectionMenuActive - Безопастность */
 
-  z-index: 1;
+  z-index: -1;
 
-  position: static;
-  width: 101px;
+  transform: translate(0, -75%);
+  /* bottom: calc(50%); */
+  display: none;
+  position: absolute;
+  width: 100px;
   height: 9px;
-
+  left: calc(50% - 111px/2);
+  /* top: calc(100%); */
   background: #EBD8CC;
-
-  /* Inside Auto Layout */
-
   flex: none;
-  order: 2;
+  order: 0;
   align-self: flex-start;
+  margin: 0px 0px;
+}
+
+.SectionMenuItem4:hover .SectionMenuActiveItem4 {
+  display: block;
 }
 
 .SectionMenuActiveItem4 {
   /* SectionMenuActive - Инженерия */
 
-  z-index: 1;
+  z-index: -1;
 
-  position: static;
-  width: 77px;
+  transform: translate(0, -75%);
+  /* bottom: calc(50%); */
+  display: none;
+  position: absolute;
+  width: 80px;
   height: 9px;
-  
+  left: calc(50% - 111px/2);
+  /* top: calc(100%); */
   background: #EBD8CC;
-
-  /* Inside Auto Layout */
-
   flex: none;
-  order: 3;
+  order: 0;
   align-self: flex-start;
+  margin: 0px 0px;
+}
+
+.SectionMenuItem5:hover .SectionMenuActiveItem5 {
+  display: block;
 }
 
 .SectionMenuActiveItem5 {
   /* SectionMenuActive - Инфраструктура */
 
-  z-index: 1;
+  z-index: -1;
 
-  position: static;
-  width: 110px;
+  transform: translate(0, -75%);
+  /* bottom: calc(50%); */
+  display: none;
+  position: absolute;
+  width: 113px;
   height: 9px;
-
+  left: calc(50% - 111px/2);
+  /* top: calc(100%); */
   background: #EBD8CC;
-  
-  /* Inside Auto Layout */
-
   flex: none;
-  order: 4;
+  order: 0;
   align-self: flex-start;
+  margin: 0px 0px;
+}
+
+.SectionMenuItem6:hover .SectionMenuActiveItem6 {
+  display: block;
 }
 
 .SectionMenuActiveItem6 {
   /*SectionMenuActive-Транспортнаядоступность*/
-  z-index: 1;
-  
-  position: static;
-  width: 184px;
+  z-index: -1;
+
+  transform: translate(0, -75%);
+  /* bottom: calc(50%); */
+  display: none;
+  position: absolute;
+  width: 185px;
   height: 9px;
-  
+  left: calc(50% - 111px/2);
+  /* top: calc(100%); */
   background: #EBD8CC;
-  
-  /*InsideAutoLayout*/
-  
   flex: none;
-  order: 5;
+  order: 0;
   align-self: flex-start;
+  margin: 0px 0px;
 }

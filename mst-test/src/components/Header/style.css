@@ -61,6 +61,8 @@
   height: 70px;
   right: 25px;
   top: 25px;
+
+  z-index: 10;
 }
 
 .BurgerBackground {
@@ -115,6 +117,7 @@
   flex-direction: row;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 
   position: absolute;
   width: 558px;
@@ -245,4 +248,22 @@
   order: 3;
   align-self: center;
   margin: 56px 0px;
+}
+
+.MenuItem1:hover .MenuActiveItem1 {
+  display: block;
+}
+
+.MenuActiveItem1 {
+  /* MenuActive */
+  position: absolute;
+  display: none;
+  width: 104px;
+  height: 4px;
+  left: calc(50% - 104px/2 - 234px);
+  top: 44px;
+
+  /* Accent */
+
+  background: #D88F5E;
 }

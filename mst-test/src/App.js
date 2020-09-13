@@ -5,13 +5,13 @@ import './App.css';
 import Footer from './components/Footer'
 import Header from './components/Header'
 import SectionMenu from './components/SectionMenu';
-import { ContentList } from './content/ContentList';
+import ContentList from './components/ContentList';
 
 const bodyStyle = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  minHeight: '100vh',
+  minHeight: '80vh',
 };
 
 function App() {

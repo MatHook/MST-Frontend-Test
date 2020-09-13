@@ -21,6 +21,7 @@ const Header = () => (
     </div>
     <div className={cx("HeaderMenu")}>
       <p className={cx("MenuItem1")}>О комплексе</p>
+      <div className={cx("MenuActiveItem1")} />
       <p className={cx('MenuItem2')}>Особенности</p>
       <p className={cx('MenuItem3')}>Пентхаусы</p>
       <p className={cx('MenuItem4')}>Выбрать квартиру</p>
